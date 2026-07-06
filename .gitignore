@@ -31,6 +31,7 @@ vault/20-areas/*
 vault/30-resources/*
 vault/40-archive/*
 !vault/**/.gitkeep
+vault/90-system/dashboards/state-snapshot.md
 .obsidian/
 vault/.obsidian/
 

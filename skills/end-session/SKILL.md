@@ -32,10 +32,12 @@ also run proactively when context is about to run out.
 4. **Queue hygiene:** move processed trigger files to `state/queue/done/`.
 5. **DB:** `python3 scripts/db.py session end <id> --summary "<one-liner>"`;
    mark finished tasks `db.py task done <id>`.
-6. Verify (the whole point): re-read the three state files and confirm a
+6. **Vault views:** `python3 scripts/sync_vault_views.py` so the Obsidian
+   dashboards show this session's end state.
+7. Verify (the whole point): re-read the three state files and confirm a
    stranger could resume from them alone. If the "Next:" line requires chat
    context to understand, rewrite it.
-7. Tell the user what was checkpointed in 2–3 lines.
+8. Tell the user what was checkpointed in 2–3 lines.
 
 ## Outputs
 
