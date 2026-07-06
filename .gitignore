@@ -4,6 +4,9 @@ state/*
 !state/.gitkeep
 !state/*.example.md
 !state/*.example.json
+!state/queue/
+state/queue/*
+!state/queue/.gitkeep
 
 # Logs and backups
 logs/*
