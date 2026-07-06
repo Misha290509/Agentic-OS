@@ -1,0 +1,42 @@
+# ── Personal data: never committed ─────────────────────────────
+# Working state (examples with .example suffix ARE committed)
+state/*
+!state/.gitkeep
+!state/*.example.md
+!state/*.example.json
+
+# Logs and backups
+logs/*
+!logs/.gitkeep
+backups/
+
+# Databases (schema lives in data/schema.sql, which IS committed)
+data/*.db
+data/*.db-journal
+data/*.db-wal
+data/*.db-shm
+
+# Personal config (examples ARE committed)
+config/aios.json
+config/projects/*.json
+!config/projects/*.json.example
+
+# Vault: personal notes stay local; system templates/dashboards are committed
+vault/00-inbox/*
+vault/10-projects/*
+vault/20-areas/*
+vault/30-resources/*
+vault/40-archive/*
+!vault/**/.gitkeep
+.obsidian/
+vault/.obsidian/
+
+# Secrets
+.env
+.env.*
+
+# ── OS / editor noise ───────────────────────────────────────────
+.DS_Store
+Thumbs.db
+__pycache__/
+*.pyc

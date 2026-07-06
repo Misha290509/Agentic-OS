@@ -1,0 +1,11 @@
+{
+  "_comment": "Copy to config/aios.json and edit. config/aios.json is gitignored — personal values never reach the repo.",
+  "owner": "Your Name",
+  "vault_path": "vault",
+  "default_project": "example-game",
+  "timezone": "America/New_York",
+  "dashboard": {
+    "host": "127.0.0.1",
+    "port": 8321
+  }
+}
