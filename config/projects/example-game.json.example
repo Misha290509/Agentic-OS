@@ -1,0 +1,10 @@
+{
+  "_comment": "Copy to <your-project-id>.json (drop the .example suffix) and edit. One file per project. Files matching config/projects/*.json are gitignored.",
+  "name": "example-game",
+  "path": "/absolute/path/to/your/game/repo",
+  "engine": "unity | unreal | godot | custom",
+  "build_cmd": "echo 'e.g. Unity -batchmode -quit -projectPath . -executeMethod Builder.Build'",
+  "test_cmd": "echo 'e.g. Unity -batchmode -runTests -projectPath . -testResults results.xml'",
+  "test_filter_flag": "-testFilter",
+  "log_hints": "Where build/test logs land, anything Claude should know when diagnosing failures."
+}

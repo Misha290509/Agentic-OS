@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AIOS — Command Center</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>AIOS <span class="dim">command center</span></h1>
+  <div id="meta" class="dim"></div>
+</header>
+
+<section id="stats" class="tiles" hidden></section>
+<section id="actions" class="actions" hidden></section>
+
+<main class="grid">
+  <article id="panel-focus" class="panel" hidden>
+    <h2>Current focus</h2><div class="body md" id="focus"></div>
+  </article>
+  <article id="panel-open_loops" class="panel" hidden>
+    <h2>Open loops</h2><div class="body" id="open_loops"></div>
+  </article>
+  <article id="panel-tasks" class="panel" hidden>
+    <h2>Tasks</h2><div class="body" id="tasks"></div>
+  </article>
+  <article id="panel-bugs" class="panel" hidden>
+    <h2>Open bugs</h2><div class="body" id="bugs"></div>
+  </article>
+  <article id="panel-runs" class="panel" hidden>
+    <h2>Automation runs</h2><div class="body" id="runs"></div>
+  </article>
+  <article id="panel-sessions" class="panel" hidden>
+    <h2>Recent sessions</h2><div class="body" id="sessions"></div>
+  </article>
+  <article id="panel-metrics" class="panel" hidden>
+    <h2>Metrics</h2><div class="body" id="metrics"></div>
+  </article>
+  <article id="panel-queue" class="panel" hidden>
+    <h2>Queue</h2><div class="body" id="queue"></div>
+  </article>
+  <article id="panel-log" class="panel wide" hidden>
+    <h2>Session log</h2><div class="body md" id="session_log"></div>
+  </article>
+</main>
+
+<footer class="dim">state: <code>state/</code> · db: <code>data/aios.db</code> ·
+config: <code>config/ui.json</code> · docs: <code>docs/customization.md</code></footer>
+<script src="app.js"></script>
+</body>
+</html>

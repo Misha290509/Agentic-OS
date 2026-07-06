@@ -1,0 +1,27 @@
+{
+  "_schema": "Each entry is one in-flight multi-step piece of work. `loop` names a spec in loops/; `checkpoint` is the file holding per-iteration state; `next_action` must be executable by a cold session with no chat history.",
+  "loops": [
+    {
+      "id": "btf-example-game-save",
+      "loop": "build-test-fix",
+      "project": "example-game",
+      "checkpoint": "state/btf-example-game.md",
+      "iteration": 3,
+      "next_action": "Implement SaveMigrator.from_v2() per checkpoint iteration-3 intent, re-run save-system tests",
+      "status": "active",
+      "started": "2026-07-06T14:00:00Z",
+      "updated": "2026-07-06T16:45:00Z"
+    },
+    {
+      "id": "release-notes-v0.3",
+      "loop": "draft-review-revise",
+      "project": "example-game",
+      "checkpoint": "vault/10-projects/example-game/releases/v0.3.0.md",
+      "iteration": 1,
+      "next_action": "Second review pass as a player who skipped v0.2; verify all bug IDs against db",
+      "status": "paused",
+      "started": "2026-07-04T10:00:00Z",
+      "updated": "2026-07-04T12:30:00Z"
+    }
+  ]
+}

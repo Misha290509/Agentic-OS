@@ -1,0 +1,38 @@
+{
+  "_comment": "Dashboard configuration. Committed (framework-level). How to add a panel: docs/customization.md.",
+  "refresh_seconds": 10,
+  "panels": {
+    "focus": true,
+    "stats": true,
+    "open_loops": true,
+    "tasks": true,
+    "bugs": true,
+    "runs": true,
+    "sessions": true,
+    "metrics": true,
+    "queue": true
+  },
+  "quick_actions": [
+    { "id": "morning-report", "label": "Morning Report", "hint": "Summarize state, queue top tasks" },
+    { "id": "daily-dev-log", "label": "Dev Log Now", "hint": "Write today's dev log" },
+    { "id": "triage-bugs", "label": "Triage Bugs", "hint": "Process the bug inbox" },
+    { "id": "process-playtest", "label": "Process Playtest", "hint": "Digest playtest feedback inbox" }
+  ],
+  "metrics": [
+    { "name": "build_time", "label": "Build time", "unit": "s" },
+    { "name": "devlog_written", "label": "Dev logs written", "unit": "" }
+  ],
+  "limits": { "tasks": 12, "runs": 8, "sessions": 5, "metrics": 6, "log_entries": 3 },
+  "theme": {
+    "_comment": "Dark theme tokens (validated palette; see dataviz reference). Change hex values only.",
+    "page": "#0d0d0d",
+    "surface": "#1a1a19",
+    "ink": "#ffffff",
+    "ink_secondary": "#c3c2b7",
+    "ink_muted": "#898781",
+    "hairline": "#2c2c2a",
+    "border": "rgba(255,255,255,0.10)",
+    "accent": "#3987e5",
+    "status": { "good": "#0ca30c", "warning": "#fab219", "serious": "#ec835a", "critical": "#d03b3b" }
+  }
+}

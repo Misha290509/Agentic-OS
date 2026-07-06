@@ -1,0 +1,6 @@
+# AIOS automations — paste into `crontab -e`, adjust paths.
+# Logs go to <repo>/logs/<automation>/YYYY-MM-DD.log; cron output is discarded
+# because the scripts do their own logging.
+0 21 * * *   $HOME/Agentic-OS/automations/daily-dev-log.sh   >/dev/null 2>&1
+30 21 * * *  $HOME/Agentic-OS/automations/backup-state.sh    >/dev/null 2>&1
+*/5 * * * *  $HOME/Agentic-OS/automations/watch-queue.sh --once >/dev/null 2>&1
